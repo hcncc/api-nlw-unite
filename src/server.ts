@@ -5,6 +5,7 @@ import { indexEvents } from "./routes/index-events"
 import { registerForEvent } from "./routes/register-for-events"
 import { indexAttendeesForEvents } from "./routes/index-attendees-for-events"
 import { getEvent } from "./routes/get-event"
+import { getAttendeeBadge } from "./routes/get-attendee-badge"
 
 const app = fastify()
 
@@ -19,6 +20,7 @@ app.register(indexEvents)
 app.register(registerForEvent)
 app.register(indexAttendeesForEvents)
 app.register(getEvent)
+app.register(getAttendeeBadge)
 
 
 //listening server
