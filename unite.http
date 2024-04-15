@@ -1,0 +1,31 @@
+GET http://localhost:3333/events/ea3003cd-c39b-44b8-8ed8-988842f62b3c
+
+###
+GET http://localhost:3333/events
+
+
+###
+
+
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Bootcamp de Compras",
+    "details": "Nesse curso aprenderemos várias técnicas de venda",
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/ea3003cd-c39b-44b8-8ed8-988842f62b3c/attendees
+Content-Type: application/json
+
+{
+    "name": "Swelton Amenadiel",
+    "email": "swelto2n@muitomais.com"
+}
+
+###
+
+GET http://localhost:3333/events/271d6740-2175-4059-bcd0-aaff7c5b43e7
